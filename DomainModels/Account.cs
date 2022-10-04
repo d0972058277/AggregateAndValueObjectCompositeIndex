@@ -5,10 +5,10 @@ namespace AggregateAndValueObjectCompositeIndex.DomainModels
     public class Account : Aggregate<Guid>
     {
 #nullable disable warnings
-        public Account() { }
+        private Account() { }
 #nullable enable warnings
 
-        public Account(Guid id, string username, string password, Email email)
+        private Account(Guid id, string username, string password, Email email)
         {
             Username = username;
             Password = password;
